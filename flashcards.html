@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards - My Personal Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Energy - Flashcards</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Energy</a></li>
+            <li><a href="flashcards.html">Flashcards</a></li>
+            <li><a href="waste.html">Fraud</a></li>
+            <li><a href="scorecard.html">Actions</a></li>
+            <li><a href="books.html">Pupput Masters</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="flashcard-slide-deck-container">
+            <div class="flashcard-top-controls">
+                <select id="flashcard-topic-select" onchange="flashcardChangeTopic()">
+                    <option value="" disabled selected>Select a Topic</option>
+                    <option value="wind_energy">Wind Energy Myths</option>
+                    <option value="locals_only">Locals Only</option>
+                    <option value="rants_highlights">Rants Highlights</option>
+                    <option value="ngo_shuffle">The NGO SHuffle</option>
+                    <option value="CA_climate">The CA Climate Mafia</option>
+                    <option value="measurement_calibration">Measurement & Calibration</option>
+                    <option value="the_screws">The Screws</option>
+                </select>
+                <button class="flashcard-slidepdf-btn" onclick="window.open('./basecamppdf/rantsflashcards.pdf', '_blank')">Open Flashcard PDF</button>
+            </div>
+            <div class="flashcard-slide-window-container">
+                <div class="flashcard-btn-stack">
+                    <button class="flashcard-nav-btn flashcard-prev-btn" onclick="flashcardPrevSlide()" aria-label="Previous flashcard slide"><</button>
+                    <button class="flashcard-nav-btn flashcard-next-btn" onclick="flashcardNextSlide()" aria-label="Next flashcard slide">></button>
+                </div>
+                <div class="flashcard-slide-window">
+                    <img id="flashcard-slide-image" src="./images/rantsflashcards.JPG" alt="Flashcard Slide">
+                </div>
+                <div class="flashcard-btn-stack">
+                    <button class="flashcard-nav-btn flashcard-prev-btn" onclick="flashcardPrevSlide()" aria-label="Previous flashcard slide"><</button>
+                    <button class="flashcard-nav-btn flashcard-next-btn" onclick="flashcardNextSlide()" aria-label="Next flashcard slide">></button>
+                </div>
+            </div>
+        </div>
+      </p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

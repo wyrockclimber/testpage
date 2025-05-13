@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste - My Personal Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Energy - Fraud</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Energy</a></li>
+            <li><a href="flashcards.html">Flashcards</a></li>
+            <li><a href="waste.html">Fraud</a></li>
+            <li><a href="scorecard.html">Actions</a></li>
+            <li><a href="books.html">Puppet Masters</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="waste-slide-deck-container">
+            <div class="waste-top-controls">
+                <select id="waste-topic-select" onchange="wasteChangeTopic()">
+                    <option value="" disabled selected>Select a Topic</option>
+                    <option value="types_of_waste">Types of waste</option>
+                    <option value="how_to_find">How to find waste</option>
+                </select>
+                <button class="waste-slidepdf-btn" onclick="window.open('./basecamppdf/wastecoverslide.pdf', '_blank')">Open Slide PDF</button>
+            </div>
+            <div class="waste-slide-window-container">
+                <div class="waste-btn-stack">
+                    <button class="waste-nav-btn waste-prev-btn" onclick="wastePrevSlide()"><</button>
+                    <button class="waste-nav-btn waste-next-btn" onclick="wasteNextSlide()">></button>
+                </div>
+                <div class="waste-slide-window">
+                    <img id="waste-slide-image" src="./images/wastecoverslide.jpg" alt="Slide">
+                </div>
+                <div class="waste-btn-stack">
+                    <button class="waste-nav-btn waste-prev-btn" onclick="wastePrevSlide()"><</button>
+                    <button class="waste-nav-btn waste-next-btn" onclick="wasteNextSlide()">></button>
+                </div>
+            </div>
+        </div>
+      </p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
